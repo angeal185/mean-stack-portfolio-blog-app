@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex" />
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/textAngular/1.5.16/textAngular.min.css"/>
+    <title>Admin</title>
+</head>
+<body ng-app="myBlog">
+<nav class="navbar navbar-default">
+    <a class="navbar-brand pull-left" ui-sref="admin-all-blogs" id="logo">Admin</a>
+    <a class="navbar-brand pull-right logout" href="/logout">Logout</a>
+</nav>
+<div ui-view></div>
+<script src="/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<% extend('../layout') %>
+<% include ../includes/general/head %>
+<div id="bb-m-container" class="row blog single-post">
+    <div class="container">
+    <article>
+      <div class="blog-info">
+        <div class="post-tittle">
+          <h3><%= blog.name %></h3>
+        </div>
+        <p><%= blog.created_at %></p>
+        <div class="col-md-12"><%- blog.content %></div>
+        <% include ../includes/partials/social-icons %>
+      </div>
+    </article>
+    <% include ../includes/blog/comments %>
+    <% include ../includes/general/footer %>
+    </div>
+</div>

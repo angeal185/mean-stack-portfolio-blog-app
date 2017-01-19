@@ -1,0 +1,14 @@
+<div class="row blog">
+  <% blogs.forEach(function(blog) { %>
+  <article class="simple-post" id="main-container">
+    <div class="blog-info" id="mb-container">
+      <div class="post-tittle">
+        <a href="/blog/test/<%= blog.short_name.replace(new RegExp(" ", "g"), "-") %>/<%= blog.id %>"><%= blog.short_name %></a>
+      </div>
+      <p><%= blog.short_desc %></p><br><p><%= blog.created_at %></p>
+      <p><%= blog.author %></p>
+      <a class="btn btn-1" href="/blog/test/<%= blog.short_name.replace(new RegExp(" ", "g"), "-") %>/<%= blog.id%>">read more</a>
+    </div>
+  </article>
+<% }); %>
+</div>

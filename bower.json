@@ -1,0 +1,24 @@
+{
+  "name": "beneaves",
+  "version": "1.0.0",
+  "authors": [
+    "Ben eaves"
+  ],
+  "main": "app.js",
+  "license": "MIT",
+  "homepage": "angeal185.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "textAngular": "~1.4.2",
+    "bootstrap": "~3.3.5",
+    "angular": "1.4.3",
+    "angular-ui-router": "~0.2.15"
+  }
+}

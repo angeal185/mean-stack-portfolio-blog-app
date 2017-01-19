@@ -1,0 +1,15 @@
+<% extend('layout') %>
+<div class="content smooth">
+  <div class="container">
+    <div class="contact">
+<% include includes/partials/google-map %>
+<% include includes/partials/contact-info %>
+    <div class="<%= title %>-form">
+        <h4><%= title %> us</h4>
+        <div id="<%= title %>_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Your Message has been Sent</div>
+<% include includes/partials/contact-form %>
+        </div>
+    </div>
+<% include includes/general/footer %>
+  </div>
+</div>
