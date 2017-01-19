@@ -1,0 +1,60 @@
+var servicesData = [
+    {"icon":"images","title":"header 1","href":"#","info":"clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"},
+    {"icon":"code","title":"header 2","href":"#","info":" sadipscing elitr, sed diam nonumy"},
+    {"icon":"ios-cart-outline","title":"header 3","href":"#","info":"dolore magna aliquyam erat, sed diam voluptua."},
+    {"icon":"ios-camera-outline","title":"header 4","href":"#","info":"justo duo dolores et ea rebum. Stet clita"},
+    {"icon":"trophy","title":"header 5","href":"#","info":"dolores et ea rebum. Stet clita kasd gubergren"},
+    {"icon":"monitor","title":"header 6","href":"#","info":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr"}
+];
+
+var servicesTransform =
+{"<>":"li","class":"col-sm-4","html":[
+    {"<>":"div","class":"sec","html":[
+        {"<>":"i","class":"ion-${icon}","html":""},
+        {"<>":"h6","html":"${title}"},
+        {"<>":"div","class":"ser-over","html":[
+            {"<>":"h6","html":"${title}"},
+            {"<>":"p","html":"${info}"},
+            {"<>":"a","href":"${href}","html":"LEARN MORE"}
+          ]}
+      ]}
+  ]};
+
+
+  var orderData = [
+      {"icon":"images","title":"header 1","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$999","time":"year"},
+      {"icon":"code","title":"header 2","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$888","time":"month"},
+      {"icon":"ios-cart-outline","title":"header 3","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$777","time":"day"},
+      {"icon":"ios-camera-outline","title":"header 4","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$666","time":"hour"},
+      {"icon":"trophy","title":"header 5","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$555","time":"min"},
+      {"icon":"monitor","title":"header 6","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$444","time":"sec"}
+  ];
+
+var orderTransform =
+{"<>":"li","class":"col-md-4","html":[
+    {"<>":"div","class":"price","html":[
+        {"<>":"h5","html":"${title}"},
+        {"<>":"span","class":"sub-line","html":"${subtitle}"},
+        {"<>":"div","class":"icon","html":[
+            {"<>":"i","class":"ion-${icon}","html":""}
+          ]},
+        {"<>":"ul","html":[
+            {"<>":"li","html":"${info}"},
+            {"<>":"li","html":"${info2}"},
+            {"<>":"li","html":"${info3}"},
+            {"<>":"li","html":"${info4}"},
+            {"<>":"li","html":"${info5}"}
+          ]},
+        {"<>":"div","class":"order-info","html":[
+            {"<>":"div","class":"col-xs-5","html":[
+                {"<>":"p","html":[
+                    {"<>":"span","html":"${price}"}
+                  ]},
+                {"<>":"span","html":"${time}"}
+              ]},
+            {"<>":"div","class":"col-xs-7 no-padding","html":[
+                {"<>":"a","href":"${href}","html":"Order Now"}
+              ]}
+          ]}
+      ]}
+  ]};

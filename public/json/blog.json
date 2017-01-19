@@ -1,0 +1,13 @@
+var socialData = [
+    {"icon":"facebook","href":"#"},
+    {"icon":"twitter","href":"#"},
+    {"icon":"dribbble","href":"#"},
+    {"icon":"instagram","href":"#"},
+    {"icon":"linkedin","href":"#"}
+];
+var socialTransform =
+{"<>":"li","class":"${icon}","html":[
+    {"<>":"a","href":"${href}","html":[
+        {"<>":"i","class":"fa fa-${icon}","html":""}
+      ]}
+  ]}

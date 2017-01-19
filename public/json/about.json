@@ -1,0 +1,100 @@
+var aboutData = [
+    {"icon":"rocket","title":"header 1","info":"clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"},
+    {"icon":"code","title":"header 2","info":" sadipscing elitr, sed diam nonumy"},
+    {"icon":"github","title":"header 3","info":"dolore magna aliquyam erat, sed diam voluptua."},
+    {"icon":"codepen","title":"header 4","info":"justo duo dolores et ea rebum. Stet clita"},
+    {"icon":"pencil","title":"header 5","info":"dolores et ea rebum. Stet clita kasd gubergren"},
+    {"icon":"cogs","title":"header 6","info":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr"}
+];
+
+var aboutTransform =
+{"<>":"div","class":"slider","html":[
+    {"<>":"i","class":"fa fa-${icon}","html":""},
+    {"<>":"hr","html":""},
+    {"<>":"h5","html":"${title}"},
+    {"<>":"p","html":"${info}"}
+  ]};
+
+  var counterData = [
+      {"icon":"ios-people-outline","title":"header 3","class":"1","number":"0"},
+      {"icon":"ios-briefcase-outline","title":"header 4","class":"2","number":"0"},
+      {"icon":"trophy","title":"header 5","class":"3","number":"0"},
+      {"icon":"coffee","title":"header 6","class":"4","number":"0"}
+  ];
+
+var counterTransform =
+{"<>":"li","class":"col-sm-3","html":[
+    {"<>":"i","class":"ion-${icon}","html":""},
+    {"<>":"span","class":"count${class}","html":"${number}"},
+    {"<>":"h6","html":"${title}"}
+  ]};
+
+  var teamData = [
+      {"name":"name 1","job":"job 1","info":"Lorem ipsum dolor sit","img":"/images/team-1.jpg"},
+      {"name":"name 2","job":"job 2","info":"amet, consetetur sadipscing","img":"/images/team-1.jpg"},
+      {"name":"name 3","job":"job 3","info":"eirmod tempor invidunt ut labore","img":"/images/team-1.jpg"}
+  ];
+
+var teamTransform =
+{"<>":"li","class":"col-sm-4","html":[
+    {"<>":"div","class":"team-member","html":[
+        {"<>":"img","class":"img-responsive","src":"${img}","alt":"","html":""},
+        {"<>":"div","class":"team-over","html":[
+            {"<>":"h4","html":"${name}"},
+            {"<>":"span","html":"${job}"},
+            {"<>":"p","html":"${info}"},
+            {"<>":"ul","class":"social_icons","html":[
+                {"<>":"li","class":"facebook","html":[
+                    {"<>":"a","href":"#.","html":[
+                        {"<>":"i","class":"fa fa-facebook","html":""}
+                      ]}
+                  ]},
+                {"<>":"li","class":"twitter","html":[
+                    {"<>":"a","href":"#.","html":[
+                        {"<>":"i","class":"fa fa-twitter","html":""}
+                      ]}
+                  ]},
+                {"<>":"li","class":"linkedin","html":[
+                    {"<>":"a","href":"#.","html":[
+                        {"<>":"i","class":"fa fa-linkedin","html":""}
+                      ]}
+                  ]},
+                {"<>":"li","class":"googleplus","html":[
+                    {"<>":"a","href":"#.","html":[
+                        {"<>":"i","class":"fa fa-google-plus","html":""}
+                      ]}
+                  ]}
+              ]}
+          ]}
+      ]}
+  ]};
+
+var slideData = [
+    {"name":"name 1","info":"cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"},
+    {"name":"name 2","info":"cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat"},
+    {"name":"name 3","info":"commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse"},
+    {"name":"name 4","info":"minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea"},
+    {"name":"name 5","info":"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"},
+    {"name":"name 6","info":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"}
+];
+
+var slideTransform =
+  {"<>":"div","class":"slide","html":[
+      {"<>":"p","html":"${info}"},
+      {"<>":"h6","html":"${name}"}
+    ]}
+
+var clientData = [
+    {"name":"name 1","href":"#","alt":"","img":"/images/client-1.jpg"},
+    {"name":"name 2","href":"#","alt":"","img":"/images/client-1.jpg"},
+    {"name":"name 3","href":"#","alt":"","img":"/images/client-1.jpg"},
+    {"name":"name 1","href":"#","alt":"","img":"/images/client-1.jpg"},
+    {"name":"name 2","href":"#","alt":"","img":"/images/client-1.jpg"}
+];
+
+var clientTransform =
+    {"<>":"li","html":[
+        {"<>":"a","href":"${href}","html":[
+            {"<>":"img","src":"${img}","alt":"${alt}","title":"${name}","html":""}
+          ]}
+      ]}

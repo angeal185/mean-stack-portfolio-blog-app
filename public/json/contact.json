@@ -1,0 +1,12 @@
+var contactData = [
+    {"icon":"ios-location-outline","header":"Location","sub":"xx xxxxx xxxxxxxxx"},
+    {"icon":"edit","header":"Email","sub":"admin@admin.com"},
+    {"icon":"ios-telephone-outline","header":"contact","sub":"(+61) 000 000 000"}
+];
+
+var contactTransform =
+{"<>":"li","class":"col-sm-4","html":[
+    {"<>":"i","class":"ion-${icon}","html":""},
+    {"<>":"h5","html":"${header}"},
+    {"<>":"p","html":"${sub}"}
+  ]}

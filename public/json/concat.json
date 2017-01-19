@@ -1,0 +1,285 @@
+var navData = [
+    {"address":"/","html":"Home"},
+    {"address":"/about","html":"About"},
+    {"address":"/services","html":"Services"},
+    {"address":"/portfolio","html":"Portfolio"},
+    {"address":"/blog","html":"Blog"},
+    {"address":"/contact","html":"Contact"}
+];
+
+var navTransform =
+{"<>":"ul","class":"nav-links","html":[
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]}
+  ]};
+
+var portfolioData = [
+    {"class":"photo","name":"header 1","title":"title 1","img":"img-1","href":"/portfolio"},
+    {"class":"brand web photo product","name":"header 2","title":"title 2","img":"img-1","href":"/portfolio"},
+    {"class":"photo product","name":"header 3","title":"title 3","img":"img-1","href":"/portfolio"},
+    {"class":"web photo","name":"header 4","title":"title 4","img":"img-1","href":"/portfolio"},
+    {"class":"photo product","name":"header 5","title":"title 5","img":"img-1","href":"/portfolio"},
+    {"class":"brand photo product","name":"header 6","title":"title 6","img":"img-1","href":"/portfolio"},
+    {"class":"brand web","name":"header 7","title":"title 7","img":"img-1","href":"/portfolio"},
+    {"class":"web photo","name":"header 8","title":"title 8","img":"img-1","href":"/portfolio"},
+    {"class":"web photo","name":"header 9","title":"title 9","img":"img-1","href":"/portfolio"},
+    {"class":"photo product","name":"header 10","title":"title 10","img":"img-1","href":"/portfolio"},
+    {"class":"brand photo product","name":"header 11","title":"title 11","img":"img-1","href":"/portfolio"},
+    {"class":"web phot","name":"header 12","title":"title 12","img":"img-1","href":"/portfolio"}
+];
+
+var portfolioTransform =
+{"<>":"li","class":"item col-md-3 no-padding ${class}","html":[
+    {"<>":"img","class":"img-responsive","src":"images/${img}.jpg","alt":"","html":""},
+    {"<>":"div","class":"hover-sec","html":[
+        {"<>":"a","href":"${href}","class":"hover-in","html":[
+            {"<>":"span","class":"name","html":"${title}"},
+            {"<>":"hr","html":""},
+            {"<>":"span","class":"cat","html":"${name}"}
+          ]}
+      ]}
+  ]};
+
+
+
+  var sbData = [
+      {"address":"address here","title":"PORTFOLIO","img":"/images/portfolio-grid.png"},
+  ];
+var sbTransform =
+{"<>":"div","class":"navgation","html":[
+  {"<>":"a","href":"#.","html":[
+      {"<>":"i","class":"ion-ios-keypad-outline","html":""}
+    ]},
+  {"<>":"div","class":"open-navigation","html":[
+      {"<>":"div","class":"navi-in animated flipInY","html":[
+          {"<>":"a","href":"/","class":"logo","html":[
+              {"<>":"img","src":"${img}","html":""},
+              {"<>":"span","html":"${title}"},
+              {"<>":"hr","html":""}
+            ]},
+          {"<>":"ul","class":"nav-links filter","html":[
+              {"<>":"li","html":[
+                  {"<>":"a","class":"active","href":"#.","data-filter":"*","html":"ALL"}
+                ]},
+              {"<>":"li","html":[
+                  {"<>":"a","href":"#","data-filter":".brand","html":"BRANDING"}
+                ]},
+              {"<>":"li","html":[
+                  {"<>":"a","href":"#","data-filter":".web","html":"WEB DESIGN"}
+                ]},
+              {"<>":"li","html":[
+                  {"<>":"a","href":"#","data-filter":".photo","html":"PHOTOGRAPHY"}
+                ]},
+              {"<>":"li","html":[
+                  {"<>":"a","href":"#","data-filter":".product","html":"PRODUCT DESIGN"}
+                ]}
+            ]},
+          {"<>":"p","class":"ads","html":"${address}"}
+        ]}
+    ]}
+]};
+
+var servicesData = [
+    {"icon":"images","title":"header 1","href":"#","info":"clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"},
+    {"icon":"code","title":"header 2","href":"#","info":" sadipscing elitr, sed diam nonumy"},
+    {"icon":"ios-cart-outline","title":"header 3","href":"#","info":"dolore magna aliquyam erat, sed diam voluptua."},
+    {"icon":"ios-camera-outline","title":"header 4","href":"#","info":"justo duo dolores et ea rebum. Stet clita"},
+    {"icon":"trophy","title":"header 5","href":"#","info":"dolores et ea rebum. Stet clita kasd gubergren"},
+    {"icon":"monitor","title":"header 6","href":"#","info":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr"}
+];
+
+var servicesTransform =
+{"<>":"li","class":"col-sm-4","html":[
+    {"<>":"div","class":"sec","html":[
+        {"<>":"i","class":"ion-${icon}","html":""},
+        {"<>":"h6","html":"${title}"},
+        {"<>":"div","class":"ser-over","html":[
+            {"<>":"h6","html":"${title}"},
+            {"<>":"p","html":"${info}"},
+            {"<>":"a","href":"${href}","html":"LEARN MORE"}
+          ]}
+      ]}
+  ]};
+
+
+  var orderData = [
+      {"icon":"images","title":"header 1","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$999","time":"year"},
+      {"icon":"code","title":"header 2","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$888","time":"month"},
+      {"icon":"ios-cart-outline","title":"header 3","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$777","time":"day"},
+      {"icon":"ios-camera-outline","title":"header 4","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$666","time":"hour"},
+      {"icon":"trophy","title":"header 5","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$555","time":"min"},
+      {"icon":"monitor","title":"header 6","subtitle":"subtitle 1","href":"#","info":"info 1","info2":"info 2","info3":"info 3","info4":"info 4","info5":"info 5","price":"$444","time":"sec"}
+  ];
+
+var orderTransform =
+{"<>":"li","class":"col-md-4","html":[
+    {"<>":"div","class":"price","html":[
+        {"<>":"h5","html":"${title}"},
+        {"<>":"span","class":"sub-line","html":"${subtitle}"},
+        {"<>":"div","class":"icon","html":[
+            {"<>":"i","class":"ion-${icon}","html":""}
+          ]},
+        {"<>":"ul","html":[
+            {"<>":"li","html":"${info}"},
+            {"<>":"li","html":"${info2}"},
+            {"<>":"li","html":"${info3}"},
+            {"<>":"li","html":"${info4}"},
+            {"<>":"li","html":"${info5}"}
+          ]},
+        {"<>":"div","class":"order-info","html":[
+            {"<>":"div","class":"col-xs-5","html":[
+                {"<>":"p","html":[
+                    {"<>":"span","html":"${price}"}
+                  ]},
+                {"<>":"span","html":"${time}"}
+              ]},
+            {"<>":"div","class":"col-xs-7 no-padding","html":[
+                {"<>":"a","href":"${href}","html":"Order Now"}
+              ]}
+          ]}
+      ]}
+  ]};
+
+  var contactData = [
+      {"icon":"ios-location-outline","header":"Location","sub":"xx xxxxx xxxxxxxxx"},
+      {"icon":"edit","header":"Email","sub":"admin@admin.com"},
+      {"icon":"ios-telephone-outline","header":"contact","sub":"(+61) 000 000 000"}
+  ];
+
+  var contactTransform =
+  {"<>":"li","class":"col-sm-4","html":[
+      {"<>":"i","class":"ion-${icon}","html":""},
+      {"<>":"h5","html":"${header}"},
+      {"<>":"p","html":"${sub}"}
+    ]}
+
+    var socialData = [
+        {"icon":"facebook","href":"#"},
+        {"icon":"twitter","href":"#"},
+        {"icon":"dribbble","href":"#"},
+        {"icon":"instagram","href":"#"},
+        {"icon":"linkedin","href":"#"}
+    ];
+    var socialTransform =
+    {"<>":"li","class":"${icon}","html":[
+        {"<>":"a","href":"${href}","html":[
+            {"<>":"i","class":"fa fa-${icon}","html":""}
+          ]}
+      ]}
+
+      var aboutData = [
+          {"icon":"rocket","title":"header 1","info":"clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet"},
+          {"icon":"code","title":"header 2","info":" sadipscing elitr, sed diam nonumy"},
+          {"icon":"github","title":"header 3","info":"dolore magna aliquyam erat, sed diam voluptua."},
+          {"icon":"codepen","title":"header 4","info":"justo duo dolores et ea rebum. Stet clita"},
+          {"icon":"pencil","title":"header 5","info":"dolores et ea rebum. Stet clita kasd gubergren"},
+          {"icon":"cogs","title":"header 6","info":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr"}
+      ];
+
+      var aboutTransform =
+      {"<>":"div","class":"slider","html":[
+          {"<>":"i","class":"fa fa-${icon}","html":""},
+          {"<>":"hr","html":""},
+          {"<>":"h5","html":"${title}"},
+          {"<>":"p","html":"${info}"}
+        ]};
+
+        var counterData = [
+            {"icon":"ios-people-outline","title":"header 3","class":"1","number":"0"},
+            {"icon":"ios-briefcase-outline","title":"header 4","class":"2","number":"0"},
+            {"icon":"trophy","title":"header 5","class":"3","number":"0"},
+            {"icon":"coffee","title":"header 6","class":"4","number":"0"}
+        ];
+
+      var counterTransform =
+      {"<>":"li","class":"col-sm-3","html":[
+          {"<>":"i","class":"ion-${icon}","html":""},
+          {"<>":"span","class":"count${class}","html":"${number}"},
+          {"<>":"h6","html":"${title}"}
+        ]};
+
+        var teamData = [
+            {"name":"name 1","job":"job 1","info":"Lorem ipsum dolor sit","img":"/images/team-1.jpg"},
+            {"name":"name 2","job":"job 2","info":"amet, consetetur sadipscing","img":"/images/team-1.jpg"},
+            {"name":"name 3","job":"job 3","info":"eirmod tempor invidunt ut labore","img":"/images/team-1.jpg"}
+        ];
+
+      var teamTransform =
+      {"<>":"li","class":"col-sm-4","html":[
+          {"<>":"div","class":"team-member","html":[
+              {"<>":"img","class":"img-responsive","src":"${img}","alt":"","html":""},
+              {"<>":"div","class":"team-over","html":[
+                  {"<>":"h4","html":"${name}"},
+                  {"<>":"span","html":"${job}"},
+                  {"<>":"p","html":"${info}"},
+                  {"<>":"ul","class":"social_icons","html":[
+                      {"<>":"li","class":"facebook","html":[
+                          {"<>":"a","href":"#.","html":[
+                              {"<>":"i","class":"fa fa-facebook","html":""}
+                            ]}
+                        ]},
+                      {"<>":"li","class":"twitter","html":[
+                          {"<>":"a","href":"#.","html":[
+                              {"<>":"i","class":"fa fa-twitter","html":""}
+                            ]}
+                        ]},
+                      {"<>":"li","class":"linkedin","html":[
+                          {"<>":"a","href":"#.","html":[
+                              {"<>":"i","class":"fa fa-linkedin","html":""}
+                            ]}
+                        ]},
+                      {"<>":"li","class":"googleplus","html":[
+                          {"<>":"a","href":"#.","html":[
+                              {"<>":"i","class":"fa fa-google-plus","html":""}
+                            ]}
+                        ]}
+                    ]}
+                ]}
+            ]}
+        ]};
+
+      var slideData = [
+          {"name":"name 1","info":"cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"},
+          {"name":"name 2","info":"cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat"},
+          {"name":"name 3","info":"commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse"},
+          {"name":"name 4","info":"minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea"},
+          {"name":"name 5","info":"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"},
+          {"name":"name 6","info":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"}
+      ];
+
+      var slideTransform =
+        {"<>":"div","class":"slide","html":[
+            {"<>":"p","html":"${info}"},
+            {"<>":"h6","html":"${name}"}
+          ]}
+
+      var clientData = [
+          {"name":"name 1","href":"#","alt":"","img":"/images/client-1.jpg"},
+          {"name":"name 2","href":"#","alt":"","img":"/images/client-1.jpg"},
+          {"name":"name 3","href":"#","alt":"","img":"/images/client-1.jpg"},
+          {"name":"name 1","href":"#","alt":"","img":"/images/client-1.jpg"},
+          {"name":"name 2","href":"#","alt":"","img":"/images/client-1.jpg"}
+      ];
+
+      var clientTransform =
+          {"<>":"li","html":[
+              {"<>":"a","href":"${href}","html":[
+                  {"<>":"img","src":"${img}","alt":"${alt}","title":"${name}","html":""}
+                ]}
+            ]}

@@ -1,0 +1,65 @@
+var portfolioData = [
+    {"class":"photo","name":"header 1","title":"title 1","img":"img-1","href":"/portfolio"},
+    {"class":"brand web photo product","name":"header 2","title":"title 2","img":"img-1","href":"/portfolio"},
+    {"class":"photo product","name":"header 3","title":"title 3","img":"img-1","href":"/portfolio"},
+    {"class":"web photo","name":"header 4","title":"title 4","img":"img-1","href":"/portfolio"},
+    {"class":"photo product","name":"header 5","title":"title 5","img":"img-1","href":"/portfolio"},
+    {"class":"brand photo product","name":"header 6","title":"title 6","img":"img-1","href":"/portfolio"},
+    {"class":"brand web","name":"header 7","title":"title 7","img":"img-1","href":"/portfolio"},
+    {"class":"web photo","name":"header 8","title":"title 8","img":"img-1","href":"/portfolio"},
+    {"class":"web photo","name":"header 9","title":"title 9","img":"img-1","href":"/portfolio"},
+    {"class":"photo product","name":"header 10","title":"title 10","img":"img-1","href":"/portfolio"},
+    {"class":"brand photo product","name":"header 11","title":"title 11","img":"img-1","href":"/portfolio"},
+    {"class":"web phot","name":"header 12","title":"title 12","img":"img-1","href":"/portfolio"}
+];
+
+var portfolioTransform =
+{"<>":"li","class":"item col-md-3 no-padding ${class}","html":[
+    {"<>":"img","class":"img-responsive","src":"images/${img}.jpg","alt":"","html":""},
+    {"<>":"div","class":"hover-sec","html":[
+        {"<>":"a","href":"${href}","class":"hover-in","html":[
+            {"<>":"span","class":"name","html":"${title}"},
+            {"<>":"hr","html":""},
+            {"<>":"span","class":"cat","html":"${name}"}
+          ]}
+      ]}
+  ]};
+
+
+
+  var sbData = [
+      {"address":"address here","title":"PORTFOLIO","img":"/images/portfolio-grid.png"},
+  ];
+var sbTransform =
+{"<>":"div","class":"navgation","html":[
+  {"<>":"a","href":"#.","html":[
+      {"<>":"i","class":"ion-ios-keypad-outline","html":""}
+    ]},
+  {"<>":"div","class":"open-navigation","html":[
+      {"<>":"div","class":"navi-in animated flipInY","html":[
+          {"<>":"a","href":"/","class":"logo","html":[
+              {"<>":"img","src":"${img}","html":""},
+              {"<>":"span","html":"${title}"},
+              {"<>":"hr","html":""}
+            ]},
+          {"<>":"ul","class":"nav-links filter","html":[
+              {"<>":"li","html":[
+                  {"<>":"a","class":"active","href":"#.","data-filter":"*","html":"ALL"}
+                ]},
+              {"<>":"li","html":[
+                  {"<>":"a","href":"#","data-filter":".brand","html":"BRANDING"}
+                ]},
+              {"<>":"li","html":[
+                  {"<>":"a","href":"#","data-filter":".web","html":"WEB DESIGN"}
+                ]},
+              {"<>":"li","html":[
+                  {"<>":"a","href":"#","data-filter":".photo","html":"PHOTOGRAPHY"}
+                ]},
+              {"<>":"li","html":[
+                  {"<>":"a","href":"#","data-filter":".product","html":"PRODUCT DESIGN"}
+                ]}
+            ]},
+          {"<>":"p","class":"ads","html":"${address}"}
+        ]}
+    ]}
+]};

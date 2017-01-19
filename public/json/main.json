@@ -1,0 +1,30 @@
+var navData = [
+    {"address":"/","html":"Home"},
+    {"address":"/about","html":"About"},
+    {"address":"/services","html":"Services"},
+    {"address":"/portfolio","html":"Portfolio"},
+    {"address":"/blog","html":"Blog"},
+    {"address":"/contact","html":"Contact"}
+];
+
+var navTransform =
+{"<>":"ul","class":"nav-links","html":[
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]},
+  {"<>":"li","html":[
+      {"<>":"a","href":"${address}","html":"${html}"}
+    ]}
+  ]};
